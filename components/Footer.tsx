@@ -8,7 +8,7 @@ interface RepoStats {
 
 const Footer = async () => {
     const repoStats = await fetch(
-        'https://api.github.com/repos/khoivt/portfolio-2.0',
+        'https://api.github.com/repos/khoivt/portfoliov2',
         {
             next: {
                 revalidate: 60 * 60, // 1 hour
@@ -32,11 +32,11 @@ const Footer = async () => {
 
                 <div className="">
                     <a
-                        href="https://github.com/khoivt/portfolio-2.0"
+                        href="https://github.com/khoivt/portfoliov2"
                         target="_blank"
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
-                        Design & built by Khoi Vu
+                        Rebuilt by Khoi Vu
                         <div className="flex items-center justify-center gap-5 pt-1">
                             <span className="flex items-center gap-2">
                                 <Star size={18} /> {stargazers_count}

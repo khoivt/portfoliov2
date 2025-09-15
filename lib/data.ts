@@ -161,12 +161,9 @@ export const PROJECTS: IProject[] = [
             'TypeScript',
             'React Hook Form',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
+        thumbnail: '/projects/thumbnail/rikunabi-next.webp',
+        longThumbnail: '/projects/long/rikunabi-next.webp',
+        images: ['/projects/images/rikunabi-next.webp'],
     },
     {
         title: 'Fitness Coach',
