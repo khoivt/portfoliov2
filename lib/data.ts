@@ -6,16 +6,17 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Jayce Vu, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.vukhoi.me',
     upworkProfile:
         'https://www.upwork.com/freelancers/~01939ce8a6740a2da3?mp_source=share',
+    resumeUrl:
+        'https://www.topcv.vn/xem-cv/UQcHAF8BDQMJBgEGBgFUAABUXFRVVwdUBAVeAgda0f',
 };
 
 export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/khoivt' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/khoivt' },
     { name: 'facebook', url: 'https://www.facebook.com/vukhoi0212' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'Resume', url: GENERAL_INFO.resumeUrl },
 ];
 
 export const MY_STACK = {
@@ -53,46 +54,46 @@ export const MY_STACK = {
             icon: '/logo/framer-motion.png',
         },
         {
-            name: 'Sass',
-            icon: '/logo/sass.png',
+            name: 'Material UI',
+            icon: '/logo/material-ui.png',
         },
         {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
+            name: 'Storybook',
+            icon: '/logo/storybook.png',
         },
     ],
-    backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
-    ],
-    database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
-    ],
+    // backend: [
+    //     {
+    //         name: 'Node.js',
+    //         icon: '/logo/node.png',
+    //     },
+    //     {
+    //         name: 'NestJS',
+    //         icon: '/logo/nest.svg',
+    //     },
+    //     {
+    //         name: 'Express.js',
+    //         icon: '/logo/express.png',
+    //     },
+    // ],
+    // database: [
+    //     {
+    //         name: 'MySQL',
+    //         icon: '/logo/mysql.svg',
+    //     },
+    //     {
+    //         name: 'PostgreSQL',
+    //         icon: '/logo/postgreSQL.png',
+    //     },
+    //     {
+    //         name: 'MongoDB',
+    //         icon: '/logo/mongodb.svg',
+    //     },
+    //     {
+    //         name: 'Prisma',
+    //         icon: '/logo/prisma.png',
+    //     },
+    // ],
     tools: [
         {
             name: 'Git',
@@ -112,6 +113,93 @@ export const MY_STACK = {
 // TODO: update projects
 
 export const PROJECTS: IProject[] = [
+    {
+        title: 'Fantasy Game: Fan Fan',
+        slug: 'fan-fan',
+        liveUrl: 'https://fanfan-staging.everstar.vn/en',
+        year: 2025,
+        description: `
+            FAN FAN is a football fantasy game where players assemble virtual teams and compete based on real-world player statistics.<br/><br/>
+
+            Key Features:<br/>
+            <ul>
+                <li>🕹️ Developed 5 core game screens: Lobby, Gacha, Shop, Inventory, and Mission using ReactJS, Next.js, TypeScript, Tailwind CSS, and HeadlessUI</li>
+                <li>🎲 Built immersive gacha pack-opening experience with tunnel transitions, flip animations, and shining reveal effects using Framer Motion</li>
+                <li>🏠 Created dynamic lobby UI with intelligent button states responding to complex game conditions</li>
+                <li>🎯 Designed a vibrant, simple mission system with engaging animations</li>
+                <li>🔗 Integrated backend APIs for game data and user management</li>
+                <li>🗂️ Implemented global state management with Zustand</li>
+                <li>🧪 Established testing with MSW and documented UI components using Storybook</li>
+            </ul>
+            `,
+        role: `
+            Frontend Developer <br/>
+            Led the development of all core game screens and frontend features:
+            <ul>
+                <li>🕹️ Built Lobby, Gacha, Shop, Inventory, and Mission screens with ReactJS, Next.js, TypeScript, Tailwind CSS, and HeadlessUI</li>
+                <li>🎲 Engineered immersive gacha pack-opening with tunnel transitions, flip animations, and reveal effects using Framer Motion</li>
+                <li>🏠 Developed dynamic lobby UI with intelligent button states for complex game logic</li>
+                <li>🎯 Designed and animated mission system for engaging user experience</li>
+                <li>🔗 Integrated backend APIs for real-time game data and user management</li>
+                <li>🗂️ Managed global state with Zustand</li>
+                <li>🧪 Established frontend testing with MSW and documented components in Storybook</li>
+            </ul>
+            `,
+        techStack: [
+            'Next.js',
+            'MSW',
+            'Typescript',
+            'Tailwindcss',
+            'HeadlessUI',
+            'Framer',
+            'Zustand',
+            'MSW',
+            'Storybook',
+        ],
+        thumbnail: '/projects/thumbnail/rikunabi-next.webp',
+        longThumbnail: '/projects/long/rikunabi-next.webp',
+        images: ['/projects/images/rikunabi-next.webp'],
+    },
+    {
+        title: 'Inflinker AI Analysis System',
+        slug: 'inflinker-admin',
+        liveUrl: 'https://admin-liv-dev.everstar.vn',
+        year: 2025,
+        description: `
+            Inflinker is a comprehensive livestreaming platform that enables users to stream and restream content while synchronizing engagements and comments across multiple livestreaming platforms.<br/><br/>
+            The platform leverages AI technology to analyze livestream performance and gaming effectiveness, providing streamers with valuable insights and analytics to optimize their content strategy.<br/><br/>
+            Key Features:<br/>
+            <ul>
+                <li>📊 Analytics dashboard with interactive data tables and visualization charts for performance analysis and insights</li>
+                <li>🎥 VOD and Livestream Management systems featuring list views, media preview, detailed information display, and file download functionality</li>
+                <li>🔗 Integrated backend APIs for media content management and real-time analytics data</li>
+            </ul>
+        `,
+        role: `
+            Frontend Developer <br/>
+            <ul>
+                <li>Developed analytics dashboard with interactive data tables and charts for performance insights</li>
+                <li>Built VOD and Livestream Management systems with list, preview, detail, and download features</li>
+                <li>Integrated backend APIs for media management and real-time analytics</li>
+            </ul>
+        `,
+        techStack: [
+            'ReactJS',
+            'TypeScript',
+            'Styled Component',
+            'Redux Toolkit',
+            'VideoJs',
+            'Rechart',
+        ],
+        thumbnail: '/projects/thumbnail/inflinker.jpg',
+        longThumbnail: '/projects/long/inflinker.jpg',
+        images: [
+            '/projects/images/inflinker-1.png',
+            '/projects/images/inflinker-2.png',
+            '/projects/images/inflinker-3.png',
+            '/projects/images/inflinker-4.png',
+        ],
+    },
     {
         title: 'Rikunabi Next',
         slug: 'rikunabi-next',
@@ -267,12 +355,12 @@ export const MY_EXPERIENCE = [
     {
         title: 'Software Engineer (Frontend)',
         company: 'Everstar Global',
-        duration: 'May 2025 - Present',
+        duration: 'Apr 2025 - Present',
     },
     {
         title: 'Software Engineer (Frontend)',
         company: 'FPT Software',
-        duration: 'Oct 2022 - May 2025',
+        duration: 'Oct 2022 - Mar 2025',
     },
     {
         title: 'Software Engineer (Part-time)',
