@@ -28,9 +28,37 @@ const robotoFlex = Roboto_Flex({
     variable: '--font-roboto-flex',
 });
 
+import { siteConfig } from '@/lib/config';
+
 export const metadata: Metadata = {
-    title: 'Portfolio - Vu Khoi',
-    description: 'Personal portfolio of Vu Khoi',
+    metadataBase: new URL(siteConfig.url),
+    title: siteConfig.title,
+    description: siteConfig.description,
+    keywords: [
+        'vukhoidev',
+        'vukhoi frontend',
+        'vu khoi fe',
+        'vu khoi reactjs',
+        'vu khoi nextjs',
+        'vu khoi frontend developer',
+        'vu khoi',
+        'frontend developer',
+        'react developer',
+        'nextjs developer',
+    ],
+    authors: [{ name: siteConfig.name }],
+    creator: siteConfig.name,
+    openGraph: {
+        title: siteConfig.title,
+        description: siteConfig.description,
+        type: 'website',
+        url: siteConfig.url,
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: siteConfig.title,
+        description: siteConfig.description,
+    },
 };
 
 export default function RootLayout({
