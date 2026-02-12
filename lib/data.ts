@@ -8,8 +8,7 @@ export const GENERAL_INFO = {
 
     upworkProfile:
         'https://www.upwork.com/freelancers/~01939ce8a6740a2da3?mp_source=share',
-    resumeUrl:
-        'https://www.topcv.vn/xem-cv/UQcHAF8BDQMJBgEGBgFUAABUXFRVVwdUBAVeAgda0f',
+    resumeUrl: 'https://www.linkedin.com/in/khoivt02/',
 };
 
 export const SOCIAL_LINKS = [
