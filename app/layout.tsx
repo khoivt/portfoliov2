@@ -29,8 +29,35 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Vu Khoi',
-    description: 'Personal portfolio of Vu Khoi',
+    title: 'Vu Khoi | Frontend Developer | React & Next.js Specialist',
+    description:
+        'Frontend Developer Vu Khoi with nearly 4 years of experience specializing in ReactJS and Next.js. Expert in building modern, performant web applications.',
+    keywords: [
+        'vukhoidev',
+        'vukhoi frontend',
+        'vu khoi fe',
+        'vu khoi reactjs',
+        'vu khoi nextjs',
+        'vu khoi frontend developer',
+        'vu khoi',
+        'frontend developer',
+        'react developer',
+        'nextjs developer',
+    ],
+    authors: [{ name: 'Vu Khoi' }],
+    creator: 'Vu Khoi',
+    openGraph: {
+        title: 'Vu Khoi | Frontend Developer | React & Next.js Specialist',
+        description:
+            'Frontend Developer Vu Khoi with nearly 4 years of experience specializing in ReactJS and Next.js.',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Vu Khoi | Frontend Developer | React & Next.js Specialist',
+        description:
+            'Frontend Developer Vu Khoi with nearly 4 years of experience specializing in ReactJS and Next.js.',
+    },
 };
 
 export default function RootLayout({
