@@ -28,10 +28,12 @@ const robotoFlex = Roboto_Flex({
     variable: '--font-roboto-flex',
 });
 
+import { siteConfig } from '@/lib/config';
+
 export const metadata: Metadata = {
-    title: 'Vu Khoi | Frontend Developer | React & Next.js Specialist',
-    description:
-        'Frontend Developer Vu Khoi with nearly 4 years of experience specializing in ReactJS and Next.js. Expert in building modern, performant web applications.',
+    metadataBase: new URL(siteConfig.url),
+    title: siteConfig.title,
+    description: siteConfig.description,
     keywords: [
         'vukhoidev',
         'vukhoi frontend',
@@ -44,19 +46,18 @@ export const metadata: Metadata = {
         'react developer',
         'nextjs developer',
     ],
-    authors: [{ name: 'Vu Khoi' }],
-    creator: 'Vu Khoi',
+    authors: [{ name: siteConfig.name }],
+    creator: siteConfig.name,
     openGraph: {
-        title: 'Vu Khoi | Frontend Developer | React & Next.js Specialist',
-        description:
-            'Frontend Developer Vu Khoi with nearly 4 years of experience specializing in ReactJS and Next.js.',
+        title: siteConfig.title,
+        description: siteConfig.description,
         type: 'website',
+        url: siteConfig.url,
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Vu Khoi | Frontend Developer | React & Next.js Specialist',
-        description:
-            'Frontend Developer Vu Khoi with nearly 4 years of experience specializing in ReactJS and Next.js.',
+        title: siteConfig.title,
+        description: siteConfig.description,
     },
 };
 
